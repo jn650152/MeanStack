@@ -1,0 +1,11 @@
+This is a tutorial project usng MongoDB, Express, Node.js, Pug Engine. 
+This project is a simple web application, making full use of MVC.
+
+Users can insert, update, delete and search records in Mongodb via the interation with webpages.
+Also, restful APIs are implemented so users also have access to these four operations via command line or mobile appilcation.
+Furthermore, this web application can validate the input and return related responses.
+
+Syncronization can be integrated to the application to make database queries more efficient.
+However,this is just a simple application so there is no need to add syncronization for it.
+There are three types of syncronization, including waterfall, series and parallel.
+For future more complex applications, this factor will be taken into consideration.
