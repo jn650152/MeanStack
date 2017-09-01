@@ -1,0 +1,16 @@
+extend index.pug
+block content
+	h2 #{title}
+	form(action = "/process/person_create", method = "POST")
+		label(for = "name") name:
+		input(type = "text", placeholder = "somebody", name = "name") 
+		br
+		label(for = "age") age:
+		input(type= "number",placeholder = 20, name = "age")
+		br
+		input(type = "submit",value = "Submit")
+	
+	if errors
+		ul
+			for error in errors
+				li!=error.msg

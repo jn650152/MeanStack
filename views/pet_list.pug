@@ -1,0 +1,9 @@
+extends index.pug
+block content
+	h2=title
+	ul
+		each pet in pets
+			li owner: #{pet.owner} generic: #{pet.generic} id:#{pet.id} 	
+			a(href="/process/pet/"+pet.id) link
+	hr
+	a(href="/process/pet") add a new pet record(change link later)

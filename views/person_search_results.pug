@@ -1,0 +1,9 @@
+extends index.pug
+block content
+	h2=title
+	ul
+	each person in persons
+		li #{person.name} #{person.age}
+	hr
+	a(href = "/process/persons") back to personlist
+

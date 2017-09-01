@@ -1,0 +1,10 @@
+extends index.pug
+block content
+	h2=title
+	p #{deleteRecord}
+	p #{deleteRecord._id}
+	form(action="/process/pet_delete_post", method="POST")
+		label(for = "id") id:
+		input(type = "text", placeholder=deleteRecord._id, name="id")
+		br
+		input(type="submit", value="delete")

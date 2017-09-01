@@ -1,0 +1,15 @@
+extend index.pug 
+block content
+	h2 #{title}
+	p #{person}
+	form(action="",method="POST")
+		label(for="id") id:
+		input(name="_id", type = "text", placeholder=person._id)
+		br
+		label(for="name") name:
+		input(name = "name", placeholder = person.name, type = "text")
+		br
+		label(for="age") age:
+		input(name = "age", placeholder = person.age, type = "number")
+		br
+		input(type = "submit", value = "update")

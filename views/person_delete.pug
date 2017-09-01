@@ -1,0 +1,8 @@
+extends index.pug
+block content
+	h2=title
+	form(action="/process/person_delete_post", method="POST")
+		label(for="id") id: 
+		input(type="text", name="id")
+		br
+		input(type="submit", name="delete")

@@ -1,0 +1,12 @@
+extends index.pug
+block content
+	h2 person list
+	ul
+	each person in persons
+		li #{person.name}             #{person.age}                #{person._id}
+	hr 
+	a(href = "/process/person_create") add a new person
+	br
+	a(href = "/process/person_delete") delete a person
+	br 
+	a(href = "/process/person_search") search

@@ -1,0 +1,11 @@
+extends index.pug
+block content
+        h2=title
+        form(action="/process/person_search_interface", method="GET")
+                label(for="name") name:
+                input(type="text", name="name")
+                br
+                label(for="age") age:
+                input(type="text", name="age")
+                br
+                input(type="submit", name="search")

@@ -1,0 +1,8 @@
+extends index.pug
+block content 
+	h2 person detail
+	|name: #{person.name} <br/>
+	br
+	|age: #{person.age}
+	br 
+	a(href="/process/person_update/"+person._id) update

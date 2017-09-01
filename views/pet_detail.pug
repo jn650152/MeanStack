@@ -1,0 +1,11 @@
+extends index.pug
+block content
+	h2=title
+	|owner: #{pet.owner}
+	br
+	|generic: #{pet.generic}
+	br
+	|id: #{pet.id}
+	br
+	hr
+	a(href="/process/pet_delete_get/"+pet.id) delete
